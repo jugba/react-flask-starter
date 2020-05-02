@@ -14,7 +14,6 @@ app.logger.setLevel(gunicorn_logger.level)
 @app.route('/')                   
 def index():                      
     return render_template('index.html') 
-    # return 'Hi'
 
 @app.route('/api')
 def api():
